@@ -27,7 +27,7 @@ class Player(GameSprite):
 class Enemy(GameSprite):
     direction = 'left'
     def update(self):
-        if self.rect.x <= 470:
+        if self.rect.x <= 480:
             self.direction = 'right'
         if self.rect.x >= win_width - 85:
             self.direction = 'left'
